@@ -1,15 +1,15 @@
-Source: c2-calamares-core
+Source: pine64-calamares-core
 Section: devel
 Priority: optional
 Maintainer: Rohan Garg <rohan@kde.org>
 Build-Depends: debhelper (>= 9), dh-systemd
 Standards-Version: 3.9.6
-Homepage: https://github.com/netrunner-odroid/c2-calamares-core
+Homepage: https://github.com/netrunner-odroid/pine64-calamares-core
 
-Package: c2-calamares-core
+Package: pine64-calamares-core
 Architecture: arm64
 Depends: calamares
 Description: distribution-independent installer framework
  distribution-independent installer framework.
  .
- This package contains the c2-calamares-core settings and branding for Netrunner Debian Core.
+ This package contains the pine64-calamares-core settings and branding for Netrunner Debian Core.
