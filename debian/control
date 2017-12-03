@@ -8,7 +8,7 @@ Homepage: https://github.com/netrunner-odroid/netrunner-pinebook-calamares
 
 Package: netrunner-pinebook-calamares
 Architecture: arm64
-Depends: calamares
+Depends: calamares, calamares-plasmalnf
 Description: distribution-independent installer framework
  distribution-independent installer framework.
  .
