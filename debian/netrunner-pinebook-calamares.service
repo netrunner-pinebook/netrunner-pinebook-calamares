@@ -1,12 +1,15 @@
 [Unit]
-Description=Calamares deferred removal
-ConditionPathExists=/var/lib/calamares/first_run_done
-Before=display-manager.service
+Description=Update the operating system whilst offline
+
+DefaultDependencies=no
+Requires=sysinit.target dbus.socket
+After=sysinit.target dbus.socket systemd-journald.socket
+Before=shutdown.target system-update.target
+# See packagekit.service
+ConditionPathExists=!/run/ostree-booted
 
 [Service]
 Type=oneshot
 ExecStart=/usr/sbin/deferred_removal
 
-[Install]
-WantedBy=multi-user.target
-
+FailureAction=reboot
