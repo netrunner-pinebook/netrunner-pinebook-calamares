@@ -1,6 +1,6 @@
 [Unit]
 Description=Update the operating system whilst offline
-
+ConditionPathExists=/var/lib/calamares/first_run_done
 DefaultDependencies=no
 Requires=sysinit.target dbus.socket
 After=sysinit.target dbus.socket systemd-journald.socket
