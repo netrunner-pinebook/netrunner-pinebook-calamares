@@ -11,5 +11,3 @@ ConditionPathExists=!/run/ostree-booted
 [Service]
 Type=oneshot
 ExecStart=/usr/sbin/deferred_removal
-
-FailureAction=reboot
