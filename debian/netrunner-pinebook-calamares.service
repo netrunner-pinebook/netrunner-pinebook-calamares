@@ -9,4 +9,3 @@ ExecStart=/usr/sbin/deferred_removal
 
 [Install]
 WantedBy=multi-user.target
-
